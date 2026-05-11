@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "TT-RT-Bold";
+    src: url('../fonts/TT-Ricks-Trial-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "TT-RT-Med";
+    src: url('../fonts/TT-Ricks-Trial-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: "TT-RT-Reg";
+    src: url('../fonts/TT-Ricks-Trial-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "TT-RT-Var";
+    src: url('../fonts/TT-Ricks-Trial-Variable.ttf') format('truetype');
+    font-variation-settings: "wght" 500;
+    /* font-style: normal; */
+}
+
+
+body {
+    margin: 0px;
+}
+
+
+.homescreen {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/homepage-bg.jpg);
+    background-color: #EB4700;
+    background-size: cover;
+    background-position: center;
+    z-index: 99;
+    position: absolute;
+}
+
+nav {
+    display: flex;
+    width: 90vw;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 5vw;
+    padding-top: 3vh;
+}
+
+button {
+    border-radius: 100px;
+    background-color: white;
+    border: none;
+    width: 15vw;
+    height: 9vh;
+    color: #EC3F01;
+    font-family: "TT-RT-Var", "Inter", sans-serif;
+    font-size: 3.2vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    /* padding: 3vw; */
+}
+
+
+.contactus {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    width: 20vw;
+}
+
+.card {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    width: 7vw;
+}
+
+.menu-open {
+    display: none;
+    flex-direction: column;
+    margin-top: 0vw;
+    gap: 0vw;
+    margin-left: 5vw;
+    width: 90vw;
+}
+
+/* зигзаг для 6 пунктов */
+.home    { margin-left: 11vw; }
+.about   { margin-left: 22vw; }
+.events  { margin-left: 11vw; }
+.merch   { margin-left: 22vw; }
+.media   { margin-left: 11vw; }
+.reviews { margin-left: 22vw; }
+
+/* кнопки меню — авто-ширина под русские лейблы */
+.menu-open button {
+    display: none;          /* Изначально скрываем кнопки */
+    opacity: 0;             /* Прозрачность 0 для плавного появления */
+    transition: opacity 1s ease-in-out;
+    width: auto;
+    min-width: 15vw;
+    padding: 0 3vw;
+    margin-top: 1.5vh;
+    white-space: nowrap;
+}
+
+.menu-open button.show {
+    display: block;
+    opacity: 1;
+}
+
+/* подсветка активной страницы */
+.menu-open button[aria-current="page"] {
+    background-color: #EC3F01;
+    color: white;
+}
+
+/* заголовок страницы поверх фона */
+.typo-sm {
+    position: absolute;
+    bottom: 6vh;
+    left: 5vw;
+    width: 90vw;
+    color: white;
+    font-family: "TT-RT-Var", "Inter", sans-serif;
+}
+
+.typo-sm .t-main {
+    font-size: 6vw;
+    margin: 0;
+    line-height: 1.05;
+}
+
+/* адаптив для мобильных */
+@media (max-width: 720px) {
+    button {
+        font-size: 5vw;
+        height: 7vh;
+        width: 30vw;
+    }
+
+    .contactus { width: 36vw; }
+    .card { width: 14vw; }
+
+    .home, .events, .media   { margin-left: 5vw; }
+    .about, .merch, .reviews { margin-left: 30vw; }
+
+    .menu-open button {
+        min-width: 30vw;
+        padding: 0 4vw;
+    }
+
+    .typo-sm .t-main { font-size: 9vw; }
+}

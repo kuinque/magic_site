@@ -4,22 +4,34 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ILLUSION — ближайшие события</title>
+    <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Главный экран</a></li>
-        <li><a href="about.html">О шоу</a></li>
-        <li><a href="events.html">Ближайшие события</a></li>
-        <li><a href="merch.html">Мерч</a></li>
-        <li><a href="media.html">Медиа</a></li>
-        <li><a href="reviews.html">Отзывы</a></li>
-      </ul>
-    </nav>
+    <div class="homescreen">
 
-    <main>
-      <h1>Ближайшие события</h1>
-      <p>Здесь будет афиша ближайших выступлений.</p>
-    </main>
+      <nav>
+        <button class="menu">Menu</button>
+        <button class="card">?</button>
+        <div class="cont-open">
+          <button class="contactus">Contact us</button>
+        </div>
+      </nav>
+
+      <div class="menu-open">
+        <button class="home"    data-href="index.html">Главный экран</button>
+        <button class="about"   data-href="about.html">О шоу</button>
+        <button class="events"  data-href="events.html">Ближайшие события</button>
+        <button class="merch"   data-href="merch.html">Мерч</button>
+        <button class="media"   data-href="media.html">Медиа</button>
+        <button class="reviews" data-href="reviews.html">Отзывы</button>
+      </div>
+
+      <div class="typo-sm">
+        <p class="t-main">Ближайшие события</p>
+      </div>
+
+    </div>
+
+    <script src="assets/script.js"></script>
   </body>
 </html>
