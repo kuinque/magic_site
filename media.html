@@ -3,185 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Медиа — ORANGE WAVE</title>
-    <meta
-      name="description"
-      content="Архив выпусков, видео и подкастов ORANGE WAVE."
-    />
+    <title>Медиа</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23EB4700'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-family='Georgia' font-size='40' fill='white'%3EO%3C/text%3E%3C/svg%3E"
-    />
   </head>
   <body>
     <header class="navbar">
-      <button
-        class="nav__pill nav__menu-btn js-menu-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="menu-overlay"
-      >
-        <span class="label-open">Меню</span>
-        <span class="label-close">Закрыть</span>
-      </button>
-      <button
-        class="nav__pill nav__pill--ghost nav__pill--circle js-help-toggle"
-        type="button"
-        aria-label="Что это?"
-      >
-        ?
-      </button>
-      <a href="#contact" class="nav__pill nav__pill--ghost nav__pill--contact">
-        <span class="label-full">Связаться</span>
-        <span class="label-short">→</span>
-      </a>
+      <nav class="navbar__inner" aria-label="Главное меню">
+        <a class="nav__link" href="index.html">Главная</a>
+        <a class="nav__link" href="about.html">О шоу</a>
+        <a class="nav__link" href="events.html">События</a>
+        <a class="nav__link" href="merch.html">Мерч</a>
+        <a class="nav__link" href="media.html">Медиа</a>
+        <a class="nav__link" href="reviews.html">Отзывы</a>
+      </nav>
     </header>
 
-    <div class="help-tip js-help-tip" role="tooltip">
-      Нажми «Меню», чтобы переключаться между разделами. Жми «?», чтобы снова
-      увидеть эту подсказку.
-    </div>
-
-    <nav class="menu-overlay" id="menu-overlay" aria-label="Главное меню">
-      <div class="menu-overlay__top">
-        <div class="menu-overlay__brand">
-          ORANGE <span>wave</span>
-        </div>
-      </div>
-      <ul class="menu-list">
-        <li class="menu-list__item">
-          <a class="menu-list__link" href="index.html">
-            <span class="menu-list__num">01</span>Главная
-          </a>
-        </li>
-        <li class="menu-list__item">
-          <a class="menu-list__link" href="about.html">
-            <span class="menu-list__num">02</span>О <em>шоу</em>
-          </a>
-        </li>
-        <li class="menu-list__item">
-          <a class="menu-list__link" href="events.html">
-            <span class="menu-list__num">03</span>События
-          </a>
-        </li>
-        <li class="menu-list__item">
-          <a class="menu-list__link" href="merch.html">
-            <span class="menu-list__num">04</span>Мерч
-          </a>
-        </li>
-        <li class="menu-list__item">
-          <a class="menu-list__link" href="media.html">
-            <span class="menu-list__num">05</span>Медиа
-          </a>
-        </li>
-        <li class="menu-list__item">
-          <a class="menu-list__link" href="reviews.html">
-            <span class="menu-list__num">06</span>Отзывы
-          </a>
-        </li>
-      </ul>
-      <div class="menu-overlay__bottom">
-        <ul class="menu-overlay__socials">
-          <li><a href="#" aria-label="Telegram">Telegram</a></li>
-          <li><a href="#" aria-label="YouTube">YouTube</a></li>
-          <li><a href="#" aria-label="Spotify">Spotify</a></li>
-          <li><a href="#" aria-label="Instagram">Instagram</a></li>
-        </ul>
-        <span>© 2026 Orange Wave studio</span>
-      </div>
-    </nav>
-
-    <main>
-      <section class="container page">
-        <p class="page__kicker">раздел 05 — медиа</p>
-        <h1 class="page__title">Архив <em>эпизодов</em></h1>
-        <p class="page__lead">
-          47 выпусков. Каждое — почти полтора часа разговоров, треков и
-          случайных открытий. Слушай и смотри там, где удобно — выпуски выходят
-          на всех платформах.
-        </p>
-
-        <div class="media-grid">
-          <article class="episode episode--big">
-            <div class="episode__cover">
-              047
-              <button class="episode__play" aria-label="Воспроизвести">▶</button>
-            </div>
-            <div class="episode__body">
-              <span class="episode__meta">эпизод 047 · 09 мая · 1ч 28м</span>
-              <h2 class="episode__title">
-                «Северный Свет» и причины уехать в Мурманск
-              </h2>
-              <p class="episode__desc">
-                Самый длинный разговор сезона — про переезд из Москвы в маленький
-                город ради своей сцены и три новые песни вживую.
-              </p>
-            </div>
-          </article>
-
-          <article class="episode">
-            <div class="episode__cover">
-              046
-              <button class="episode__play" aria-label="Воспроизвести">▶</button>
-            </div>
-            <div class="episode__body">
-              <span class="episode__meta">эпизод 046 · 25 апр · 1ч 12м</span>
-              <h2 class="episode__title">Хип-хоп без понтов: разговор с TVRR</h2>
-            </div>
-          </article>
-
-          <article class="episode">
-            <div class="episode__cover">
-              045
-              <button class="episode__play" aria-label="Воспроизвести">▶</button>
-            </div>
-            <div class="episode__body">
-              <span class="episode__meta">эпизод 045 · 11 апр · 1ч 40м</span>
-              <h2 class="episode__title">Этно-фьюжн «Сахарный лёд» из Якутска</h2>
-            </div>
-          </article>
-
-          <article class="episode">
-            <div class="episode__cover">
-              044
-              <button class="episode__play" aria-label="Воспроизвести">▶</button>
-            </div>
-            <div class="episode__body">
-              <span class="episode__meta">эпизод 044 · 28 мар · 1ч 06м</span>
-              <h2 class="episode__title">Звук в плёночной комнате</h2>
-            </div>
-          </article>
-
-          <article class="episode">
-            <div class="episode__cover">
-              043
-              <button class="episode__play" aria-label="Воспроизвести">▶</button>
-            </div>
-            <div class="episode__body">
-              <span class="episode__meta">эпизод 043 · 14 мар · 1ч 22м</span>
-              <h2 class="episode__title">Поэты-самоучки: трое из Самары</h2>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <footer class="container footer" id="contact">
-        <div class="footer__brand">
-          ORANGE <span>wave</span>
-        </div>
-        <ul class="footer__links">
-          <li><a href="mailto:hello@orangewave.fm">hello@orangewave.fm</a></li>
-          <li><a href="#">Telegram</a></li>
-          <li><a href="#">Партнёрам</a></li>
-        </ul>
-      </footer>
+    <main class="page">
+      <h1 class="page__title">Медиа</h1>
     </main>
 
     <script src="js/script.js"></script>
