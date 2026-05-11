@@ -1,33 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ILLUSION — главный экран</title>
+    <meta name="description" content="ILLUSION — иммерсивное шоу иллюзий. Главный экран." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
-    <header class="navbar">
-      <nav class="navbar__inner" aria-label="Главное меню">
-        <a class="nav__link" href="index.html">Главная</a>
-        <a class="nav__link" href="about.html">О шоу</a>
-        <a class="nav__link" href="events.html">События</a>
-        <a class="nav__link" href="merch.html">Мерч</a>
-        <a class="nav__link" href="media.html">Медиа</a>
-        <a class="nav__link" href="reviews.html">Отзывы</a>
+    <header>
+      <nav class="nav" aria-label="Главная навигация">
+        <div class="nav__group nav__group--left">
+          <a class="nav__link" href="about.html">О шоу</a>
+          <a class="nav__link" href="media.html">Медиа</a>
+        </div>
+
+        <a class="nav__logo" href="index.html" aria-label="ILLUSION — на главную">
+          ILLUSION
+        </a>
+
+        <div class="nav__group nav__group--right">
+          <a class="nav__link" href="events.html">Ближайшие события</a>
+          <a class="nav__link" href="reviews.html">Отзывы</a>
+          <a class="nav__link" href="merch.html">Мерч</a>
+        </div>
+
+        <button
+          class="nav__burger"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Открыть меню"
+        >
+          <span class="nav__burger-bar"></span>
+          <span class="nav__burger-bar"></span>
+          <span class="nav__burger-bar"></span>
+        </button>
       </nav>
+
+      <div id="mobile-menu" class="mobile-menu" data-open="false">
+        <a class="mobile-menu__link" href="index.html">Главный экран</a>
+        <a class="mobile-menu__link" href="about.html">О шоу</a>
+        <a class="mobile-menu__link" href="events.html">Ближайшие события</a>
+        <a class="mobile-menu__link" href="merch.html">Мерч</a>
+        <a class="mobile-menu__link" href="media.html">Медиа</a>
+        <a class="mobile-menu__link" href="reviews.html">Отзывы</a>
+      </div>
     </header>
 
-    <main class="page">
-      <h1 class="page__title">Главная</h1>
+    <main>
+      <section class="hero">
+        <span class="hero__eyebrow">Шоу иллюзий</span>
+        <h1 class="hero__title">
+          Где заканчивается реальность — начинается <em>ILLUSION</em>
+        </h1>
+        <p class="hero__text">
+          Это первая версия сайта. В дальнейшем здесь появятся анонсы шоу,
+          афиша, мерч и медиа. Пока что вы можете воспользоваться меню сверху,
+          чтобы перейти между страницами.
+        </p>
+      </section>
     </main>
 
-    <script src="js/script.js"></script>
+    <script src="assets/script.js" defer></script>
   </body>
 </html>
