@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORANGE WAVE — независимое музыкальное шоу</title>
+    <meta
+      name="description"
+      content="ORANGE WAVE — независимое музыкальное шоу о новой волне, культуре и людях, которые её создают."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23EB4700'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-family='Georgia' font-size='40' fill='white'%3EO%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <!-- =============== NAVBAR =============== -->
+    <header class="navbar">
+      <button
+        class="nav__pill nav__menu-btn js-menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-overlay"
+      >
+        <span class="label-open">Меню</span>
+        <span class="label-close">Закрыть</span>
+      </button>
+      <button
+        class="nav__pill nav__pill--ghost nav__pill--circle js-help-toggle"
+        type="button"
+        aria-label="Что это?"
+      >
+        ?
+      </button>
+      <a href="#contact" class="nav__pill nav__pill--ghost nav__pill--contact">
+        <span class="label-full">Связаться</span>
+        <span class="label-short">→</span>
+      </a>
+    </header>
+
+    <div class="help-tip js-help-tip" role="tooltip">
+      Нажми «Меню», чтобы переключаться между разделами. Жми «?», чтобы снова
+      увидеть эту подсказку.
+    </div>
+
+    <!-- =============== MENU OVERLAY =============== -->
+    <nav class="menu-overlay" id="menu-overlay" aria-label="Главное меню">
+      <div class="menu-overlay__top">
+        <div class="menu-overlay__brand">
+          ORANGE <span>wave</span>
+        </div>
+      </div>
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="index.html">
+            <span class="menu-list__num">01</span>Главная
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="about.html">
+            <span class="menu-list__num">02</span>О <em>шоу</em>
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="events.html">
+            <span class="menu-list__num">03</span>События
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="merch.html">
+            <span class="menu-list__num">04</span>Мерч
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="media.html">
+            <span class="menu-list__num">05</span>Медиа
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="reviews.html">
+            <span class="menu-list__num">06</span>Отзывы
+          </a>
+        </li>
+      </ul>
+      <div class="menu-overlay__bottom">
+        <ul class="menu-overlay__socials">
+          <li><a href="#" aria-label="Telegram">Telegram</a></li>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+          <li><a href="#" aria-label="Spotify">Spotify</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        </ul>
+        <span>© 2026 Orange Wave studio</span>
+      </div>
+    </nav>
+
+    <!-- =============== MAIN =============== -->
+    <main>
+      <section class="container hero">
+        <div>
+          <p class="page__kicker">эпизод #047 — в эфире</p>
+          <h1 class="hero__title">
+            Orange<br />
+            <em>Wave</em>
+          </h1>
+          <div class="hero__meta">
+            <div class="hero__meta-cell">
+              <span class="label">Ближайший эфир</span>
+              <span class="value">пт, 24.05 — 20:00</span>
+            </div>
+            <div class="hero__meta-cell">
+              <span class="label">Студия</span>
+              <span class="value">Москва, Хлебозавод</span>
+            </div>
+            <div class="hero__meta-cell">
+              <span class="label">Ведущие</span>
+              <span class="value">Аня · Лёша · Костя</span>
+            </div>
+            <div class="hero__meta-cell">
+              <span class="label">Где смотреть</span>
+              <span class="value">YouTube / Spotify</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ticker" aria-hidden="true">
+          <div class="ticker__track">
+            <span>живая музыка</span>
+            <span>интервью</span>
+            <span>премьеры</span>
+            <span>оранжевая волна</span>
+            <span>живая музыка</span>
+            <span>интервью</span>
+            <span>премьеры</span>
+            <span>оранжевая волна</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="container footer" id="contact">
+        <div class="footer__brand">
+          ORANGE <span>wave</span>
+        </div>
+        <ul class="footer__links">
+          <li><a href="mailto:hello@orangewave.fm">hello@orangewave.fm</a></li>
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">Партнёрам</a></li>
+        </ul>
+      </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ближайшие события — ORANGE WAVE</title>
+    <meta
+      name="description"
+      content="Расписание ближайших живых эфиров, концертов и гастролей ORANGE WAVE."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23EB4700'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-family='Georgia' font-size='40' fill='white'%3EO%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <button
+        class="nav__pill nav__menu-btn js-menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-overlay"
+      >
+        <span class="label-open">Меню</span>
+        <span class="label-close">Закрыть</span>
+      </button>
+      <button
+        class="nav__pill nav__pill--ghost nav__pill--circle js-help-toggle"
+        type="button"
+        aria-label="Что это?"
+      >
+        ?
+      </button>
+      <a href="#contact" class="nav__pill nav__pill--ghost nav__pill--contact">
+        <span class="label-full">Связаться</span>
+        <span class="label-short">→</span>
+      </a>
+    </header>
+
+    <div class="help-tip js-help-tip" role="tooltip">
+      Нажми «Меню», чтобы переключаться между разделами. Жми «?», чтобы снова
+      увидеть эту подсказку.
+    </div>
+
+    <nav class="menu-overlay" id="menu-overlay" aria-label="Главное меню">
+      <div class="menu-overlay__top">
+        <div class="menu-overlay__brand">
+          ORANGE <span>wave</span>
+        </div>
+      </div>
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="index.html">
+            <span class="menu-list__num">01</span>Главная
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="about.html">
+            <span class="menu-list__num">02</span>О <em>шоу</em>
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="events.html">
+            <span class="menu-list__num">03</span>События
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="merch.html">
+            <span class="menu-list__num">04</span>Мерч
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="media.html">
+            <span class="menu-list__num">05</span>Медиа
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="reviews.html">
+            <span class="menu-list__num">06</span>Отзывы
+          </a>
+        </li>
+      </ul>
+      <div class="menu-overlay__bottom">
+        <ul class="menu-overlay__socials">
+          <li><a href="#" aria-label="Telegram">Telegram</a></li>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+          <li><a href="#" aria-label="Spotify">Spotify</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        </ul>
+        <span>© 2026 Orange Wave studio</span>
+      </div>
+    </nav>
+
+    <main>
+      <section class="container page">
+        <p class="page__kicker">раздел 03 — события</p>
+        <h1 class="page__title">Ближайшие <em>эфиры</em></h1>
+        <p class="page__lead">
+          Эфиры проходят в нашей студии на Хлебозаводе и в других городах
+          гастрольного тура. На все события — свободный вход, но ограниченное
+          число мест.
+        </p>
+
+        <div class="events">
+          <article class="event">
+            <div class="event__date">
+              24<span>Мая</span>
+            </div>
+            <div class="event__info">
+              <h2 class="event__title">Эфир №048 · Гости: «Северный Свет»</h2>
+              <p class="event__place">Москва · Хлебозавод #9, студия B · 20:00</p>
+            </div>
+            <a href="#" class="event__cta">Забронировать →</a>
+          </article>
+
+          <article class="event">
+            <div class="event__date">
+              07<span>Июня</span>
+            </div>
+            <div class="event__info">
+              <h2 class="event__title">Live в гараже · open-air спецвыпуск</h2>
+              <p class="event__place">Санкт-Петербург · Севкабель Порт · 19:30</p>
+            </div>
+            <a href="#" class="event__cta">Купить билет →</a>
+          </article>
+
+          <article class="event">
+            <div class="event__date">
+              14<span>Июня</span>
+            </div>
+            <div class="event__info">
+              <h2 class="event__title">Эфир №049 · Бит-мейкеры с Урала</h2>
+              <p class="event__place">Москва · Хлебозавод #9, студия B · 20:00</p>
+            </div>
+            <a href="#" class="event__cta">Забронировать →</a>
+          </article>
+
+          <article class="event">
+            <div class="event__date">
+              22<span>Июня</span>
+            </div>
+            <div class="event__info">
+              <h2 class="event__title">Гастроль · Казань</h2>
+              <p class="event__place">Казань · Smena · 19:00</p>
+            </div>
+            <span class="event__cta event__cta--sold">Sold out</span>
+          </article>
+
+          <article class="event">
+            <div class="event__date">
+              05<span>Июля</span>
+            </div>
+            <div class="event__info">
+              <h2 class="event__title">Гастроль · Екатеринбург</h2>
+              <p class="event__place">Екатеринбург · «Ельцин Центр», Атриум · 19:30</p>
+            </div>
+            <a href="#" class="event__cta">Купить билет →</a>
+          </article>
+
+          <article class="event">
+            <div class="event__date">
+              12<span>Июля</span>
+            </div>
+            <div class="event__info">
+              <h2 class="event__title">Большой летний эфир №050 — юбилейный</h2>
+              <p class="event__place">Москва · Парк Горького, сцена «Оливье» · 21:00</p>
+            </div>
+            <a href="#" class="event__cta">Подписаться на старт</a>
+          </article>
+        </div>
+      </section>
+
+      <footer class="container footer" id="contact">
+        <div class="footer__brand">
+          ORANGE <span>wave</span>
+        </div>
+        <ul class="footer__links">
+          <li><a href="mailto:hello@orangewave.fm">hello@orangewave.fm</a></li>
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">Партнёрам</a></li>
+        </ul>
+      </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

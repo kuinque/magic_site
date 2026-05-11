@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отзывы — ORANGE WAVE</title>
+    <meta
+      name="description"
+      content="Что говорят слушатели, артисты и зрители об ORANGE WAVE."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23EB4700'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-family='Georgia' font-size='40' fill='white'%3EO%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <button
+        class="nav__pill nav__menu-btn js-menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-overlay"
+      >
+        <span class="label-open">Меню</span>
+        <span class="label-close">Закрыть</span>
+      </button>
+      <button
+        class="nav__pill nav__pill--ghost nav__pill--circle js-help-toggle"
+        type="button"
+        aria-label="Что это?"
+      >
+        ?
+      </button>
+      <a href="#contact" class="nav__pill nav__pill--ghost nav__pill--contact">
+        <span class="label-full">Связаться</span>
+        <span class="label-short">→</span>
+      </a>
+    </header>
+
+    <div class="help-tip js-help-tip" role="tooltip">
+      Нажми «Меню», чтобы переключаться между разделами. Жми «?», чтобы снова
+      увидеть эту подсказку.
+    </div>
+
+    <nav class="menu-overlay" id="menu-overlay" aria-label="Главное меню">
+      <div class="menu-overlay__top">
+        <div class="menu-overlay__brand">
+          ORANGE <span>wave</span>
+        </div>
+      </div>
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="index.html">
+            <span class="menu-list__num">01</span>Главная
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="about.html">
+            <span class="menu-list__num">02</span>О <em>шоу</em>
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="events.html">
+            <span class="menu-list__num">03</span>События
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="merch.html">
+            <span class="menu-list__num">04</span>Мерч
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="media.html">
+            <span class="menu-list__num">05</span>Медиа
+          </a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="reviews.html">
+            <span class="menu-list__num">06</span>Отзывы
+          </a>
+        </li>
+      </ul>
+      <div class="menu-overlay__bottom">
+        <ul class="menu-overlay__socials">
+          <li><a href="#" aria-label="Telegram">Telegram</a></li>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+          <li><a href="#" aria-label="Spotify">Spotify</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        </ul>
+        <span>© 2026 Orange Wave studio</span>
+      </div>
+    </nav>
+
+    <main>
+      <section class="container page">
+        <p class="page__kicker">раздел 06 — отзывы</p>
+        <h1 class="page__title">Слова <em>в нашу сторону</em></h1>
+        <p class="page__lead">
+          Несколько цитат — от слушателей, артистов и тех, кто случайно заходит
+          на эфир. Лучшие комплименты — те, где не упоминают слово «продакшн».
+        </p>
+      </section>
+
+      <section class="reviews-marquee" aria-label="Отзывы — ряд 1">
+        <div class="reviews-marquee__track">
+          <article class="review">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Это единственное шоу, после которого я открываю Bandcamp и
+              действительно покупаю альбомы».
+            </p>
+            <div class="review__author">— Маша П., Москва</div>
+          </article>
+
+          <article class="review review--accent">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Зашёл послушать одну песню — остался на полтора часа. Так,
+              кажется, и должны работать честные эфиры».
+            </p>
+            <div class="review__author">— Дима Р., Казань</div>
+          </article>
+
+          <article class="review">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Они задают вопросы, на которые мне самой давно было лень отвечать.
+              Спасибо за разговор».
+            </p>
+            <div class="review__author">— Лиза К., артистка</div>
+          </article>
+
+          <article class="review">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Слышно, что у людей за пультом руки, а не алгоритм».
+            </p>
+            <div class="review__author">— Артур С., саундмен</div>
+          </article>
+
+          <!-- дубль для бесконечной ленты -->
+          <article class="review">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Это единственное шоу, после которого я открываю Bandcamp и
+              действительно покупаю альбомы».
+            </p>
+            <div class="review__author">— Маша П., Москва</div>
+          </article>
+          <article class="review review--accent">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Зашёл послушать одну песню — остался на полтора часа. Так,
+              кажется, и должны работать честные эфиры».
+            </p>
+            <div class="review__author">— Дима Р., Казань</div>
+          </article>
+          <article class="review">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Они задают вопросы, на которые мне самой давно было лень отвечать.
+              Спасибо за разговор».
+            </p>
+            <div class="review__author">— Лиза К., артистка</div>
+          </article>
+          <article class="review">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Слышно, что у людей за пультом руки, а не алгоритм».
+            </p>
+            <div class="review__author">— Артур С., саундмен</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="reviews-marquee" aria-label="Отзывы — ряд 2" style="margin-top: 24px">
+        <div class="reviews-marquee__track" style="animation-direction: reverse; animation-duration: 60s">
+          <article class="review review--accent">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Звук в студии у них живее, чем у половины концертных залов».
+            </p>
+            <div class="review__author">— Илья Б., музыкальный журналист</div>
+          </article>
+          <article class="review">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Никогда не думала, что подкаст может быть таким же тёплым, как
+              кухонные посиделки. А тут вот».
+            </p>
+            <div class="review__author">— Соня В., Челябинск</div>
+          </article>
+          <article class="review">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Сделайте, пожалуйста, прямой эфир из Владика. Я заплачу за
+              билет».
+            </p>
+            <div class="review__author">— Денис, Владивосток</div>
+          </article>
+          <article class="review review--accent">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Если бы каждое медиа было таким, мы бы не разучились слушать
+              людей».
+            </p>
+            <div class="review__author">— Лена Ш., преподаватель</div>
+          </article>
+          <article class="review review--accent">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Звук в студии у них живее, чем у половины концертных залов».
+            </p>
+            <div class="review__author">— Илья Б., музыкальный журналист</div>
+          </article>
+          <article class="review">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Никогда не думала, что подкаст может быть таким же тёплым, как
+              кухонные посиделки. А тут вот».
+            </p>
+            <div class="review__author">— Соня В., Челябинск</div>
+          </article>
+          <article class="review">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Сделайте, пожалуйста, прямой эфир из Владика. Я заплачу за
+              билет».
+            </p>
+            <div class="review__author">— Денис, Владивосток</div>
+          </article>
+          <article class="review review--accent">
+            <div class="review__stars">★ ★ ★ ★ ★</div>
+            <p class="review__text">
+              «Если бы каждое медиа было таким, мы бы не разучились слушать
+              людей».
+            </p>
+            <div class="review__author">— Лена Ш., преподаватель</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="reviews-cta">
+          <p class="reviews-cta__text">
+            Хочешь оставить отзыв? Напиши нам — обещаем прочитать каждый.
+          </p>
+          <a href="mailto:hello@orangewave.fm" class="event__cta">
+            Написать письмо →
+          </a>
+        </div>
+      </section>
+
+      <footer class="container footer" id="contact">
+        <div class="footer__brand">
+          ORANGE <span>wave</span>
+        </div>
+        <ul class="footer__links">
+          <li><a href="mailto:hello@orangewave.fm">hello@orangewave.fm</a></li>
+          <li><a href="#">Telegram</a></li>
+          <li><a href="#">Партнёрам</a></li>
+        </ul>
+      </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
